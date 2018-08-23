@@ -1,0 +1,26 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spotify crawler</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<div class="artist__container">
+    <h1 class=" heading-primary">Your search term:
+        <span class="artist__seach-param">{{searchParam}}</span>
+    </h1>
+    <h2>Search results:</h2>
+
+    <div class="artist__container--cards">
+        {{#each data}}
+        <div class="artist__card">
+            <h3 class="artist__card--name">{{name}}</h3>
+            <div class="artist__card--img-wrapper">
+                <img class="artist__card--img" src={{images.1.url}}></img>
+            </div>
+            <a href="/albums/{{id}}" class="artist__card--link">View albums</a>
+        </div>
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-btn-color: #ad5d4e;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.heading-primary {
+  font-weight: 200;
+  font-size: 6rem;
+  margin: 5rem 0;
+}
+
+.container {
+  background-image: url(../imgs/concert.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.container form {
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+.container form input,
+.container form button {
+  height: 4rem;
+  border: none;
+  font-size: 2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.container form * {
+  margin-bottom: 1.5rem;
+}
+
+.artist__container {
+  width: 80vw;
+  margin: 0 auto;
+}
+.artist__container h2 {
+  font-size: 3rem;
+}
+.artist__container--cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.artist__seach-param {
+  text-transform: uppercase;
+}
+.artist__card {
+  width: 30%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin: 3rem 1.5rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.artist__card * {
+  transition: all 0.5s;
+}
+.artist__card--name {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.artist__card--img {
+  width: 100%;
+}
+.artist__card--img-wrapper {
+  width: 80%;
+  margin-bottom: 3rem;
+}
+.artist__card--img:hover {
+  transform: scale(1.02);
+}
+.artist__card--link {
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--main-btn-color);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+.artist__card--link:hover {
+  background-color: #9c5346;
+  transform: translateY(-5px);
+}
+.artist__card--link:active {
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=main.css.map */
